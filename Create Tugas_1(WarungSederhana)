@@ -1,0 +1,56 @@
+import java.util.Scanner;
+    public class Penjualan1 {
+        public static void main(String[] args) 
+        {
+          Scanner scan = new Scanner(System.in);
+        
+             int jlh_data,pilihan,total,bayar,total1,harga = 0;
+            String namamakanan;
+           
+              for (String a = "Y"; a.equals("Y")||a.equals("y"); )
+              {
+            Scanner input = new Scanner(System.in);
+            System.out.println("==================");
+            System.out.println("===Menu Makanan===");
+            System.out.println("| 1. Mie Ayam     |");
+            System.out.println("| 2. Nasi Goreng  |");
+            System.out.println("| 3. Mie Goreng   |");
+            System.out.println("| 4. Mie Rebus    |");
+            System.out.println("==================");
+            
+          
+            System.out.print("Silahkan pilih yang anda pesan : ");
+            pilihan = input.nextInt();
+            if(pilihan == 1){
+                 harga = 7000;
+                System.out.println("@Mie Ayam" + " harga : Rp. " + harga);      
+            }else if(pilihan == 2){
+                harga = 11000;
+                System.out.println("@Nasi Goreng " + "harga : Rp. " + harga);
+            }else if(pilihan == 3){
+                harga = 10000;
+                System.out.println("@Mie Goreng " + "harga : Rp. " + harga);
+            }else if(pilihan == 4){
+                harga = 10000;
+                System.out.println("@Mie Rebus " + "harga : Rp. " + harga);
+            }else{
+                System.out.println("Maaf Pilihan yang Anda Pilih Salah !");
+            }
+            System.out.print("Jumlah Porsi ? :");
+            jlh_data = input.nextInt();
+                total = harga * jlh_data;
+                
+                {
+                
+                 {
+              System.out.print("Apakah anda mau melanjutkan? Y/T");
+              System.out.println(a = scan.next());
+            }
+               total1 = (int) (total);
+               System.out.println("Total Harga yang harus dibayar : Rp. " +total1);
+              System.out.println("Terimakasih Telah Makan Di Warung Kami");
+             
+        }
+      }
+    }
+  }
